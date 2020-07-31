@@ -4,6 +4,12 @@ const $saveNoteBtn = $(".save-note");
 const $newNoteBtn = $(".new-note");
 const $noteList = $(".list-container .list-group");
 
+if (typeof jQuery !== "undefined") {
+  console.log("jQuery Loaded");
+} else {
+  console.log("not loaded yet");
+}
+
 // activeNote is used to keep track of the note in the textarea
 let activeNote = {};
 
