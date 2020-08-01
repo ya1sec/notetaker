@@ -13,6 +13,6 @@ module.exports = function (app) {
   });
 
   app.get("/api/notes", function (req, res) {
-    return res.sendFile(path.json(__dirname, "./db/db.json"));
+    return res.sendFile(path.join(__dirname, "../db/db.json"));
   });
 };
